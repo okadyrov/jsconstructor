@@ -1,0 +1,22 @@
+{
+  "name": "jsconstructor",
+  "version": "1.0.0",
+  "description": "native js site constructor",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Oleg Kadyrov <some email>",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
