@@ -9,11 +9,16 @@ function title(block) {
 }
  function text(block) {
     return row(col(`
-      <p>${block.value}</p>
+      <p style="margin-bottom: 0;">${block.value}</p>
      `), block.options.styles)
 }
  function textColumns(block) {
     const html = block.value.map(item => col(item))
     return row(html.join(''), block.options.styles)
 }
-export const templates = {title, text, textColumns}
+function image(block) {
+    const {alt, styles, imageStyles} = block.options
+    const html = `<img src="${block.value}" alt="${alt}" style="${imageStyles}" />`
+    return row(html, styles)
+}
+export const templates = {title, text, textColumns, image}
