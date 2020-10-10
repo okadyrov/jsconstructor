@@ -2,7 +2,6 @@ import {col, row} from "./utils";
 
 function title(block) {
     const {tag, styles} = block.options
-
     return row(col(`
     <${tag}>${block.value}<${tag}>
     `), styles)
