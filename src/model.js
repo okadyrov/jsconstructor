@@ -16,6 +16,8 @@ export const model = [
         'Pure JavaScript App without libraries',
         'Learn SOLID and OOP principles work in JavaScript',
         'Learn to develop any UI'
-    ], 'padding: 2rem 0; color: #fff;background: linear-gradient(to bottom, #8e2de2, #4a00e0);font-weight: bold;')
+    ],{
+        styles: 'padding: 2rem 0; color: #fff;background: linear-gradient(to bottom, #8e2de2, #4a00e0);font-weight: bold;'
+    })
 
 ]
