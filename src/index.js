@@ -7,7 +7,12 @@ import './styles/main.css'
 
 const site = new Site('#site')
 
-new Sitebar('#panel')
+const updateCallback = newBlock => {
+    model.push(newBlock)
+    site.render(model)
+}
+
+new Sitebar('#panel', updateCallback )
 
 site.render(model)
 
