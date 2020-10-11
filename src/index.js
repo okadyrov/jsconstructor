@@ -1,10 +1,13 @@
 import {model} from "./model";
+import {Site} from "./classes/site";
+import {Sitebar} from "./classes/sitebar";
 import './styles/main.css'
 
 
-const site = document.querySelector('#site')
 
-model.forEach(block => {
-    site.insertAdjacentHTML('beforeend', block.toHTML())
-})
+const site = new Site('#site')
+
+new Sitebar('#panel')
+
+site.render(model)
 
